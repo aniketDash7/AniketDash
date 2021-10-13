@@ -1,0 +1,133 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+
+    font-family: jfont ;
+    src: url(jfont/NikkyouSans-mLKax.ttf);
+
+}
+
+.toggler{
+
+    position:absolute;
+    right:5%;
+    top:3%;
+    width:2rem;
+    height:2rem;
+    background-color: black;  
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.toggler h3{
+
+    font-weight: 100;
+    transform:rotate(-45deg);
+    cursor: pointer;
+    color:white;
+
+}
+
+.toggler:hover{
+
+    transform:rotate(45deg);
+
+}
+
+.socials{
+
+    margin-top: 8rem;
+    position: absolute;
+    right:5%;
+    text-align: center;
+    cursor:pointer;
+
+}
+
+.socials a{
+
+    display: block;
+    margin:6rem 0;
+    font-size: 1.5rem;
+    color:black;
+    transition:all 0.2s;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .circle{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .socials{
+        position: absolute;
+        left:10%;
+        top:10%;
+    }
+
+}
+
+body{
+
+    font-family: 'jfont';
+    background-color: #D81C3D;
+    perspective: 1220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:background 0.4s;
+
+}
+
+.circle{
+
+    margin-top: 10%;
+    width:31rem;
+    height:31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: black 3px solid;
+    transform-style: preserve-3d;
+    transition:all 0.5s;
+
+}
+
+.intro{
+
+    width:27rem;
+    height:27rem;
+    border:black 2px dotted;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition:all 0.4s;
+
+}
+
+.intro h1{
+
+    transition:all 0.4s;
+    writing-mode: vertical-lr;
+    text-orientation:mixed ;
+    font-size:5rem;
+    letter-spacing: 1.5rem;
+
+}
+
+
+
