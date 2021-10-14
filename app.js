@@ -5,6 +5,8 @@ const toggler = document.querySelector('.toggler');
 const togglerH3 = document.querySelector('.toggler h3');
 const body = document.querySelector('body');
 const atags = document.querySelectorAll('.socials a');
+const mobile = document.querySelector('.mobile');
+
 let checker = false;
 
 card.addEventListener('mousemove',(e)=>{
@@ -23,7 +25,7 @@ toggler.addEventListener('click',function(){
         });
         toggler.style.background = 'white';
         togglerH3.style.color = 'black';
-
+        mobile.style.color = '#c00b4e';
         body.style.background = 'black';
         introDiv.style.border = '2px #c00b4e dotted';
         card.style.border = '3px #c00b4e solid';
@@ -36,6 +38,7 @@ toggler.addEventListener('click',function(){
         introDiv.style.border = '2px black dotted';
         toggler.style.background = 'black';
         togglerH3.style.color = 'white';
+        mobile.style.color = 'black';
         card.style.border = '3px solid black';
         intro.style.color = 'black';
         atags.forEach(i=>{
